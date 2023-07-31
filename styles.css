@@ -8,6 +8,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.no-fill {
+  font-variation-settings: 'FILL' 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: min-content repeat(4, 1fr);
@@ -106,8 +118,6 @@ body {
   font-weight: bold;
 }
 
-
-
 .projects {
   grid-column: 1 / 2;
   display: grid;
@@ -126,6 +136,7 @@ body {
   padding: 20px;
   display: grid;
   color: rgb(99, 99, 99);
+  box-shadow: 2px 2px 2px 1px rgba(99, 99, 99, 0.3);
 }
 
 .project-card-title {
@@ -133,7 +144,7 @@ body {
 }
 
 .project-card-buttons {
-  /* color: black; */
+  padding-top: 12px;
   text-align: end;
   align-self: center;
   display: flex;
