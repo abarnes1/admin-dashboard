@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  background-color: blue;
+}
+
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  background-color: cadetblue;
+}
+
+.content {
+  grid-column: 2 / -1;
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: auto minmax(100px, 300px);
+  gap: 24px;
+  padding: 24px;
+}
+
+.section-title {
+  background-color: aqua;
+  padding-bottom: 12px;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  background-color: green;
+  display: grid;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background-color: chocolate;
+  height: 200px;
+}
+
+.activity {
+  grid-column: 2 / 3;
+  background-color: brown;
+  gap: 24px;
+}
+
+.announcements,
+.trending {
+  padding: 12px;
+  background-color:green;
+}
+
+.announcements .cards {
+  display: grid; 
+  gap: 2px;
+}
+
+.announcement-card {
+  background-color: chocolate;
+}
+
+.trending .cards {
+  display: grid;
+  gap: 8px;
+}
+
+.trending-card {
+  background-color: chocolate;
+}
