@@ -7,6 +7,10 @@
   color: white;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -18,21 +22,33 @@
 .menu {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
-  background-color: blue;
+  background-color: rgb(25, 146, 212);
   padding: 12px 24px;
+  font-weight: bold;
 }
 
 .menu-branding {
-  font-size: 30px;
+  font-size: 28px;
+  height: 72px;
+  gap: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
 .menu ul {
   margin-top: 36px;
   list-style-type: none;
+  display: grid;
 }
 
 .menu li {
   margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding-left: 8px;
+  gap: 18px;
 }
 
 .header {
