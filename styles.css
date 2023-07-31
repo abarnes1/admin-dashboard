@@ -112,7 +112,6 @@ body {
 }
 
 .section-title {
-  /* background-color: cadetblue; */
   padding-bottom: 12px;
   font-size: 18px;
   font-weight: bold;
@@ -121,6 +120,7 @@ body {
 .projects {
   grid-column: 1 / 2;
   display: grid;
+  grid-template-rows: min-content auto;
 }
 
 .projects .cards {
