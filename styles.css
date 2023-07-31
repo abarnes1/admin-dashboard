@@ -120,7 +120,7 @@ body {
 .projects {
   grid-column: 1 / 2;
   display: grid;
-  grid-template-rows: min-content auto;
+  grid-template-rows: repeat(2, min-content);
 }
 
 .projects .cards {
