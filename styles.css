@@ -13,7 +13,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: min-content repeat(4, 1fr);
   grid-template-rows: 1fr 4fr;
   height: 100vh;
   width: 100vw;
@@ -23,7 +23,7 @@ body {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   background-color: rgb(25, 146, 212);
-  padding: 12px 24px;
+  padding: 12px 30px;
   font-weight: bold;
 }
 
