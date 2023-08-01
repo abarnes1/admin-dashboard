@@ -20,6 +20,14 @@ body {
   font-variation-settings: 'FILL' 0;
 }
 
+.text-dark {
+  color: black;
+}
+
+.text-light {
+  color: rgb(99, 99, 99);
+}
+
 .container {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -161,7 +169,7 @@ body {
   margin-bottom: 24px;
 }
 
-.announcements .cards {
+.announcements .cards, .trending .cards {
   border-radius: 15px;
   background-color: white;
   padding: 12px 24px;
@@ -190,6 +198,19 @@ body {
   gap: 8px;
 }
 
-.trending-card {
-  background-color: chocolate;
+.trending-user-card {
+  padding: 8px 8px;
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 12px;
+  justify-items: start;
+  align-items: center;
+}
+
+.trending-user-card img {
+  background-color: black;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
 }
