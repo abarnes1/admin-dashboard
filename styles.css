@@ -12,6 +12,24 @@ ul {
   list-style-type: none;
 }
 
+input[type="text"] {
+  border-radius: 20px;
+  padding: 8px;
+  height: min-content;
+  width: clamp(80%, 480px, 100%);
+  border: none;
+  background-color: rgb(226, 232, 240);
+}
+
+button {
+  background-color: lightblue;
+}
+
+input[type="text"]:focus {
+  outline-color: rgba(99, 99, 99, 0.5);
+  border-color: 1px solid rgba(99, 99, 99, 0.5);
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 1,
@@ -97,28 +115,34 @@ ul {
 }
 
 .header * {
-  background-color: chocolate;
   padding: 12px;
 }
 
 .header-search {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content 1fr;
 }
 
 .header-notifications {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  background-color: chocolate;
 }
 
 .header-greeting {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background-color: chocolate;
 }
 
 .header-buttons {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  background-color: chocolate;
 }
 
 .content {
