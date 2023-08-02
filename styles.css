@@ -55,6 +55,11 @@ input[type="text"]:focus {
   color: rgb(99, 99, 99);
 }
 
+.img-48x48 {
+  height: 48px;
+  width: 48px;
+}
+
 .round {
   border-radius: 50%;
 }
@@ -111,13 +116,14 @@ input[type="text"]:focus {
 .header {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
-  padding: 12px;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 12px;
 
+  font-weight: bold;
+  padding: 12px 30px;
   box-shadow: 2px 2px 2px 1px rgba(99, 99, 99, 0.3);
 }
 
@@ -134,7 +140,14 @@ input[type="text"]:focus {
 .header-notifications {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  background-color: chocolate;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+
+  font-size: 18px;
+
 }
 
 .header-greeting {
@@ -240,10 +253,4 @@ input[type="text"]:focus {
   gap: 12px;
   justify-items: start;
   align-items: center;
-}
-
-.trending-user-card img {
-  background-color: black;
-  height: 48px;
-  width: 48px;
 }
