@@ -8,6 +8,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 1,
@@ -26,6 +30,14 @@ body {
 
 .text-light {
   color: rgb(99, 99, 99);
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.accent-shadow {
+  box-shadow: 2px 2px 2px 1px rgba(99, 99, 99, 0.3);
 }
 
 .container {
@@ -61,7 +73,6 @@ body {
 
 .menu ul {
   margin-top: 36px;
-  list-style-type: none;
   display: grid;
 }
 
@@ -143,7 +154,6 @@ body {
   border-radius: 10px;
   padding: 20px;
   display: grid;
-  box-shadow: 2px 2px 2px 1px rgba(99, 99, 99, 0.3);
 }
 
 .project-card-buttons {
@@ -168,7 +178,6 @@ body {
   border-radius: 15px;
   background-color: white;
   padding: 12px 24px;
-  box-shadow: 2px 2px 2px 1px rgba(99, 99, 99, 0.3);
 }
 
 .announcements .cards .announcement-card:last-child {
@@ -193,7 +202,6 @@ body {
 
 .trending-user-card {
   padding: 8px 8px;
-
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 12px;
@@ -205,5 +213,4 @@ body {
   background-color: black;
   height: 48px;
   width: 48px;
-  border-radius: 50%;
 }
