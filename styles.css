@@ -55,9 +55,22 @@ input[type="text"]:focus {
   color: rgb(99, 99, 99);
 }
 
+.text-large {
+  font-size: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.75rem;
+}
+
 .img-48x48 {
   height: 48px;
   width: 48px;
+}
+
+.img-72x72 {
+  height: 72px;
+  width: 72px;
 }
 
 .round {
@@ -122,9 +135,10 @@ input[type="text"]:focus {
   grid-template-rows: 1fr 1fr;
   gap: 12px;
 
-  font-weight: bold;
-  padding: 12px 30px;
+  font-weight: bolder;
+  padding: 16px 30px;
   box-shadow: 2px 2px 2px 1px rgba(99, 99, 99, 0.3);
+  z-index: 1;
 }
 
 .header-search {
@@ -147,13 +161,16 @@ input[type="text"]:focus {
   padding-right: 12px;
 
   font-size: 18px;
-
 }
 
 .header-greeting {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background-color: chocolate;
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 12px;
+  align-items: center;
 }
 
 .header-buttons {
